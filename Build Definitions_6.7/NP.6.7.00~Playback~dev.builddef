@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Name>NP.6.7.00~Playback~dev</Name>
+  <TeamProject>NIM</TeamProject>
+  <TeamProjectCollectionUri>http://tlvtfsnlbprd:8080/tfs/ptu_collection</TeamProjectCollectionUri>
+  <Description />
+  <QueueStatus>Enabled</QueueStatus>
+  <ContinuousIntegrationType>Batch</ContinuousIntegrationType>
+  <ContinuousIntegrationQuietPeriod>30</ContinuousIntegrationQuietPeriod>
+  <BuildController>vtfs-03-40-yy [Type-40]</BuildController>
+  <DefaultDropLocation>\\netapp07b\build\nim\np.6.7.00_dev\history</DefaultDropLocation>
+  <Process>2405</Process>
+  <ProcessParameters>&lt;Dictionary x:TypeArguments="x:String, x:Object" xmlns="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:mtbwa="clr-namespace:Microsoft.TeamFoundation.Build.Workflow.Activities;assembly=Microsoft.TeamFoundation.Build.Workflow" xmlns:sbt="clr-namespace:Sela.Build.Types;assembly=Sela.Build.Types" xmlns:sbte="clr-namespace:Sela.Build.Types.Enums;assembly=Sela.Build.Types" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;
+  &lt;mtbwa:TestSpecList x:Key="TestSpecs" Capacity="1"&gt;
+    &lt;mtbwa:TestAssemblySpec AssemblyFileSpec="Sources\Playback++\Server\PlaybackRealTimeFramework.UnitTests\bin\Release\PlaybackRealTimeFramework.UnitTests.dll" CategoryFilter="" MSTestCommandLineArgs="" TestSettingsFileName="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Playback++/Server/Local.testsettings" /&gt;
+  &lt;/mtbwa:TestSpecList&gt;
+  &lt;mtbwa:SourceAndSymbolServerSettings x:Key="SourceAndSymbolServerSettings" SymbolStorePath="\\netapp07b\build\NIM\NP.6.7.00_dev\Symbols" /&gt;
+  &lt;mtbwa:AgentSettings x:Key="AgentSettings" MaxExecutionTime="01:00:00" MaxWaitTime="00:05:00" TagComparison="MatchExactly" Tags="Type-40" /&gt;
+  &lt;x:Boolean x:Key="CreateWorkItem"&gt;False&lt;/x:Boolean&gt;
+  &lt;x:Boolean x:Key="DisplayLog"&gt;True&lt;/x:Boolean&gt;
+  &lt;List x:TypeArguments="sbt:ProjectCompiler" x:Key="ProjectsToCompile" Capacity="16"&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/ResourceManager/ResourceManager.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="ReleaseMinDependency" Platform="Win32" Project="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Playback++/PlaybackComponents/PlaybackComponentsClient.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="ReleaseMinDependency" Platform="Win32" Project="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Playback++/PlaybackComponents/PlaybackComponentsServer.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Playback++/Client/ClientSolution.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Playback++/Server/ServerSolution.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Playback++/PlaybackPlugin/PBSServerPlugin.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Playback++/PlaybackPlugin/PbsPlugin.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Playback++/BSF Interface/FacadeWrapper/FacadeWrapper.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="4"&gt;
+          &lt;sbt:FileToRun WorkFlowItemName="{x:Null}" Arguments=" -pvk &amp;quot;&amp;lt;file&amp;gt;$/NIM/NP/NP.6.7.00_dev/NP/Build/Signing/myprivatekey.pvk&amp;lt;/file&amp;gt;&amp;quot; -pi NiceSystems -spc &amp;quot;&amp;lt;file&amp;gt;$/NIM/NP/NP.6.7.00_dev/NP/Build/Signing/mycredentials.spc&amp;lt;/file&amp;gt;&amp;quot; -pfx mypfxfile.pfx -f" FileToExecutePath="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Build/CodeSigning/pvk2pfx.exe" Timeout="0" WorkingDirectory="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Build/CodeSigning"&gt;
+            &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+              &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+            &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+          &lt;/sbt:FileToRun&gt;
+        &lt;/List&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+  &lt;/List&gt;
+  &lt;x:String x:Key="XmlProductsUri"&gt;$/NIM/NP/NP.6.7.00_dev/NP/Build/CopyProducts/Products.xml&lt;/x:String&gt;
+  &lt;x:String x:Key="XmlDependenciesUri"&gt;$/NIM/NP/NP.6.7.00_dev/NP/Build/CollectDependencies/Dependencies.xml&lt;/x:String&gt;
+  &lt;sbte:ComponentAction x:Key="ComponentAction"&gt;Compilation&lt;/sbte:ComponentAction&gt;
+  &lt;List x:TypeArguments="sbt:ProjectCompiler" x:Key="PackagesToCompile" Capacity="4"&gt;
+    &lt;sbt:ProjectCompiler MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" AdditionalArguments="" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Playback++/Client/PlayerSetup/Player Codec Pack/Player Codec Pack.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" AdditionalArguments="" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Playback++/Client/PlayerSetup/PlayerSetup.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" AdditionalArguments="" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="Default" Project="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Playback++/Client/PlayerSetup/Player Language Pack/LanguagePack/PlayerLanguagePack.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="4"&gt;
+          &lt;sbt:FileToRun WorkFlowItemName="{x:Null}" Arguments="" FileToExecutePath="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Install/InstallScripts/PlaybackProductsJustMeScript.bat" Timeout="0" WorkingDirectory="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Install/InstallScripts"&gt;
+            &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+              &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+            &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+          &lt;/sbt:FileToRun&gt;
+          &lt;sbt:FileToRun WorkFlowItemName="{x:Null}" Arguments="&amp;lt;file&amp;gt;$/NIM/NP/NP.6.7.00_dev/NP/Playback/DeploymentBin/Playback/Nice Player.msi&amp;lt;/file&amp;gt;" FileToExecutePath="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Build/CodeSigning/SignFile.bat" Timeout="0" WorkingDirectory="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Build/CodeSigning"&gt;
+            &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+              &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+            &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+          &lt;/sbt:FileToRun&gt;
+          &lt;sbt:FileToRun WorkFlowItemName="{x:Null}" Arguments="&amp;lt;file&amp;gt;$/NIM/NP/NP.6.7.00_dev/NP/Playback/DeploymentBin/Playback/Nice Player Codec Pack.msi&amp;lt;/file&amp;gt;" FileToExecutePath="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Build/CodeSigning/SignFile.bat" Timeout="0" WorkingDirectory="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Build/CodeSigning"&gt;
+            &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+              &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+            &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+          &lt;/sbt:FileToRun&gt;
+        &lt;/List&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" AdditionalArguments="" BuildAction="Rebuild" CompilerName="VisualStudio2005DevEnv" Configuration="Release" Platform="Default" Project="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Playback++/Client/PlayerSetup/Player Language Pack/LanguagePack/PlayerLanguagePack.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+  &lt;/List&gt;
+  &lt;List x:TypeArguments="sbt:ClientSidePackaging" x:Key="ClientSidePackaging" Capacity="4"&gt;
+    &lt;sbt:ClientSidePackaging FilePath="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Playback++/Client/PlayerSetup/PlayerSetup.vdproj" NewFileVersion="4.1.4301.59971" NewTitle="NICE Engage Platform Release " /&gt;
+    &lt;sbt:ClientSidePackaging FilePath="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Playback++/Client/PlayerSetup/Player Codec Pack/Player Codec Pack.vdproj" NewFileVersion="4.1.4301.59971" NewTitle="NICE Engage Platform Release " /&gt;
+    &lt;sbt:ClientSidePackaging NewFileVersion="{x:Null}" FilePath="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Playback++/Client/PlayerSetup/Player Video Codec Pack/Player Video Codec Pack.vdproj" NewTitle="NICE Engage Platform Release " /&gt;
+  &lt;/List&gt;
+  &lt;List x:TypeArguments="sbt:FileToRun" x:Key="FilesToRunPostPackagingCompilation" Capacity="4"&gt;
+    &lt;sbt:FileToRun WorkFlowItemName="{x:Null}" Arguments="" FileToExecutePath="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Playback++/Client/PlayerSetup/Player Language Pack/OrcaScripts/LangPackMsiScript.bat" Timeout="0" WorkingDirectory="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Playback++/Client/PlayerSetup/Player Language Pack/OrcaScripts"&gt;
+      &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+    &lt;/sbt:FileToRun&gt;
+  &lt;/List&gt;
+  &lt;x:String x:Key="NP_Output"&gt;\\netapp07b\build\NIM\NP.6.7.00_dev\NP_Output&lt;/x:String&gt;
+  &lt;sbt:ProjectFileToRunOrTestItems WorkFlowItemName="{x:Null}" x:Key="ProjectsFilesToRunAndTests"&gt;
+    &lt;sbt:ProjectFileToRunOrTestItems.ProjectsTestsAndFilesToRun&gt;
+      &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="4"&gt;
+        &lt;sbt:ProjectFileToRunOrTestItem WorkFlowItemName="Items To Compile"&gt;
+          &lt;sbt:ProjectFileToRunOrTestItem.ChildrenProjectsFilesToRunTests&gt;
+            &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="16"&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/ResourceManager/ResourceManager.sln" Timeout="0" WorkFlowItemName="ResourceManager.sln =&amp;gt; VisualStudio2010DevEnv (Release|AnyCPU)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Playback++/Client/ClientSolution.sln" Timeout="0" WorkFlowItemName="ClientSolution.sln =&amp;gt; VisualStudio2010DevEnv (Release|AnyCPU)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+              &lt;sbt:FileToRun Arguments="&amp;quot;{Bin}\..\Sources\Playback++\Server\ServerSolution.sln&amp;quot; /fl /flp:&amp;quot;logfile={Logs}\ServerSolution_Release_AnyCPU.log;encoding=Unicode;verbosity=normal&amp;quot; /t:Rebuild /p:Configuration=&amp;quot;Release&amp;quot; /p:Platform=&amp;quot;Any CPU&amp;quot; /p:RunCodeAnalysis=false" FileToExecutePath="C:\Program Files (x86)\MSBuild\14.0\Bin\MSBuild.exe" Timeout="0" WorkFlowItemName="C:\Program Files (x86)\MSBuild\14.0\Bin\MSBuild.exe =&amp;gt; &amp;quot;{Bin}\..\Sources\Playback++\Server\ServerSolution.sln&amp;quot; /fl /flp:&amp;quot;logfile={Logs}\ServerSolution_Release_AnyCPU.log;encoding=Unicode;verbosity=normal&amp;quot; /t:Rebuild /p:Configuration=&amp;quot;Release&amp;quot; /p:Platform=&amp;quot;Any CPU&amp;quot; /p:RunCodeAnalysis=false" WorkingDirectory="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Playback++/Server"&gt;
+                &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:FileToRun&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Playback++/PlaybackPlugin/PBSServerPlugin.sln" Timeout="0" WorkFlowItemName="PBSServerPlugin.sln =&amp;gt; VisualStudio2010DevEnv (Release|AnyCPU)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Playback++/PlaybackPlugin/PbsPlugin.sln" Timeout="0" WorkFlowItemName="PbsPlugin.sln =&amp;gt; VisualStudio2010DevEnv (Release|AnyCPU)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Playback++/BSF Interface/FacadeWrapper/FacadeWrapper.sln" Timeout="0" WorkFlowItemName="FacadeWrapper.sln =&amp;gt; VisualStudio2010DevEnv (Release|AnyCPU)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Playback++/Client/Synch PB Generic Action/Synch PB Generic Action.sln" Timeout="0" WorkFlowItemName="Synch PB Generic Action.sln =&amp;gt; VisualStudio2010DevEnv (Release|AnyCPU)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+              &lt;sbt:FileToRun Arguments=" -pvk &amp;quot;&amp;lt;file&amp;gt;$/NIM/NP/NP.6.7.00_dev/NP/Build/Signing/myprivatekey.pvk&amp;lt;/file&amp;gt;&amp;quot; -pi NiceSystems -spc &amp;quot;&amp;lt;file&amp;gt;$/NIM/NP/NP.6.7.00_dev/NP/Build/Signing/mycredentials.spc&amp;lt;/file&amp;gt;&amp;quot; -pfx mypfxfile.pfx -f" FileToExecutePath="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Build/CodeSigning/pvk2pfx.exe" Timeout="0" WorkFlowItemName="pvk2pfx.exe =&amp;gt;  -pvk &amp;quot;&amp;lt;file&amp;gt;$/NIM/NP/NP.6.7.00_dev/NP/Build/Signing/myprivatekey.pvk&amp;lt;/file&amp;gt;&amp;quot; -pi NiceSystems -spc &amp;quot;&amp;lt;file&amp;gt;$/NIM/NP/NP.6.7.00_dev/NP/Build/Signing/mycredentials.spc&amp;lt;/file&amp;gt;&amp;quot; -pfx mypfxfile.pfx -f" WorkingDirectory="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Build/CodeSigning"&gt;
+                &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:FileToRun&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Playback++/Server/StreamServer Installer CA/StreamServerInstaller.sln" Timeout="0" WorkFlowItemName="StreamServerInstaller.sln =&amp;gt; VisualStudio2010DevEnv (Release|AnyCPU)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2013DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Playback++/CustomActions/PlaybackCA.sln" Timeout="0" WorkFlowItemName="PlaybackCA.sln =&amp;gt; VisualStudio2013DevEnv (Release|AnyCPU)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Playback++/Server/StreamServerInstallerUP CA/StreamServerInstallerUP CA.sln" Timeout="0" WorkFlowItemName="StreamServerInstallerUP CA.sln =&amp;gt; VisualStudio2010DevEnv (Release|AnyCPU)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Clean" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="x86" Project="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Playback++/Server/AdminServer Installer CA/AdminServerInstaller.sln" Timeout="0" WorkFlowItemName="AdminServerInstaller.sln =&amp;gt; VisualStudio2010DevEnv (Release|x86)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Build" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="x86" Project="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Playback++/Server/AdminServer Installer CA/AdminServerInstaller.sln" Timeout="0" WorkFlowItemName="AdminServerInstaller.sln =&amp;gt; VisualStudio2010DevEnv (Release|x86)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+              &lt;sbt:FileToRun Arguments="&amp;quot;{Bin}\..\Sources\Playback++\TASPlaybackdll\TASPlaybackdll.sln&amp;quot; /fl /flp:&amp;quot;logfile={Logs}\TASPlaybackdll_Release_AnyCPU.log;encoding=Unicode;verbosity=normal&amp;quot; /t:Rebuild /p:Configuration=&amp;quot;Release&amp;quot; /p:Platform=&amp;quot;Any CPU&amp;quot; /p:RunCodeAnalysis=false" FileToExecutePath="C:\Program Files (x86)\MSBuild\14.0\Bin\MSBuild.exe" Timeout="0" WorkFlowItemName="C:\Program Files (x86)\MSBuild\14.0\Bin\MSBuild.exe =&amp;gt; &amp;quot;{Bin}\..\Sources\Playback++\TASPlaybackdll\TASPlaybackdll.sln&amp;quot; /fl /flp:&amp;quot;logfile={Logs}\TASPlaybackdll_Release_AnyCPU.log;encoding=Unicode;verbosity=normal&amp;quot; /t:Rebuild /p:Configuration=&amp;quot;Release&amp;quot; /p:Platform=&amp;quot;Any CPU&amp;quot; /p:RunCodeAnalysis=false" WorkingDirectory="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Playback++/TASPlaybackdll"&gt;
+                &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:FileToRun&gt;
+            &lt;/List&gt;
+          &lt;/sbt:ProjectFileToRunOrTestItem.ChildrenProjectsFilesToRunTests&gt;
+        &lt;/sbt:ProjectFileToRunOrTestItem&gt;
+      &lt;/List&gt;
+    &lt;/sbt:ProjectFileToRunOrTestItems.ProjectsTestsAndFilesToRun&gt;
+  &lt;/sbt:ProjectFileToRunOrTestItems&gt;
+  &lt;sbt:ProjectFileToRunOrTestItems WorkFlowItemName="{x:Null}" x:Key="PackagesProjectsAndFilesToRun"&gt;
+    &lt;sbt:ProjectFileToRunOrTestItems.ProjectsTestsAndFilesToRun&gt;
+      &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="4"&gt;
+        &lt;sbt:ProjectFileToRunOrTestItem WorkFlowItemName="Items To Compile"&gt;
+          &lt;sbt:ProjectFileToRunOrTestItem.ChildrenProjectsFilesToRunTests&gt;
+            &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="8"&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Playback++/Client/PlayerSetup/Player Codec Pack/Player Codec Pack.sln" Timeout="0" WorkFlowItemName="Player Codec Pack.sln =&amp;gt; VisualStudio2010DevEnv (Release|AnyCPU)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Playback++/Client/PlayerSetup/PlayerSetup.sln" Timeout="0" WorkFlowItemName="PlayerSetup.sln =&amp;gt; VisualStudio2010DevEnv (Release|AnyCPU)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+              &lt;sbt:FileToRun Arguments="" FileToExecutePath="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Install/InstallScripts/PlaybackProductsJustMeScript.bat" Timeout="0" WorkFlowItemName="PlaybackProductsJustMeScript.bat =&amp;gt; " WorkingDirectory="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Install/InstallScripts"&gt;
+                &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:FileToRun&gt;
+              &lt;sbt:FileToRun Arguments=" -pvk &amp;quot;&amp;lt;file&amp;gt;$/NIM/NP/NP.6.7.00_dev/NP/Build/Signing/myprivatekey.pvk&amp;lt;/file&amp;gt;&amp;quot; -pi NiceSystems -spc &amp;quot;&amp;lt;file&amp;gt;$/NIM/NP/NP.6.7.00_dev/NP/Build/Signing/mycredentials.spc&amp;lt;/file&amp;gt;&amp;quot; -pfx mypfxfile.pfx -f" FileToExecutePath="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Build/CodeSigning/pvk2pfx.exe" Timeout="0" WorkFlowItemName="pvk2pfx.exe =&amp;gt;  -pvk &amp;quot;&amp;lt;file&amp;gt;$/NIM/NP/NP.6.7.00_dev/NP/Build/Signing/myprivatekey.pvk&amp;lt;/file&amp;gt;&amp;quot; -pi NiceSystems -spc &amp;quot;&amp;lt;file&amp;gt;$/NIM/NP/NP.6.7.00_dev/NP/Build/Signing/mycredentials.spc&amp;lt;/file&amp;gt;&amp;quot; -pfx mypfxfile.pfx -f" WorkingDirectory="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Build/CodeSigning"&gt;
+                &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:FileToRun&gt;
+              &lt;sbt:FileToRun Arguments="&amp;lt;file&amp;gt;$/NIM/NP/NP.6.7.00_dev/NP/Playback/DeploymentBin/Playback/Nice Player.msi&amp;lt;/file&amp;gt;" FileToExecutePath="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Build/CodeSigning/SignFile.bat" Timeout="0" WorkFlowItemName="SignFile.bat =&amp;gt; &amp;lt;file&amp;gt;$/NIM/NP/NP.6.7.00_dev/NP/Playback/DeploymentBin/Playback/Nice Player.msi&amp;lt;/file&amp;gt;" WorkingDirectory="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Build/CodeSigning"&gt;
+                &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:FileToRun&gt;
+              &lt;sbt:FileToRun Arguments="&amp;lt;file&amp;gt;$/NIM/NP/NP.6.7.00_dev/NP/Playback/DeploymentBin/Playback/Nice Player Codec Pack.msi&amp;lt;/file&amp;gt;" FileToExecutePath="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Build/CodeSigning/SignFile.bat" Timeout="0" WorkFlowItemName="SignFile.bat =&amp;gt; &amp;lt;file&amp;gt;$/NIM/NP/NP.6.7.00_dev/NP/Playback/DeploymentBin/Playback/Nice Player Codec Pack.msi&amp;lt;/file&amp;gt;" WorkingDirectory="$/NIM/NP/NP.6.7.00_dev/NP/Playback/Sources/Build/CodeSigning"&gt;
+                &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:FileToRun&gt;
+            &lt;/List&gt;
+          &lt;/sbt:ProjectFileToRunOrTestItem.ChildrenProjectsFilesToRunTests&gt;
+        &lt;/sbt:ProjectFileToRunOrTestItem&gt;
+        &lt;sbt:ProjectFileToRunOrTestItem WorkFlowItemName="Files to Run"&gt;
+          &lt;sbt:ProjectFileToRunOrTestItem.ChildrenProjectsFilesToRunTests&gt;
+            &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+          &lt;/sbt:ProjectFileToRunOrTestItem.ChildrenProjectsFilesToRunTests&gt;
+        &lt;/sbt:ProjectFileToRunOrTestItem&gt;
+      &lt;/List&gt;
+    &lt;/sbt:ProjectFileToRunOrTestItems.ProjectsTestsAndFilesToRun&gt;
+  &lt;/sbt:ProjectFileToRunOrTestItems&gt;
+  &lt;x:Boolean x:Key="AutoMarkingStep"&gt;True&lt;/x:Boolean&gt;
+  &lt;x:String x:Key="VersionName"&gt;MirageB&lt;/x:String&gt;
+  &lt;x:String x:Key="UpdatePackNumberFilePath"&gt;$/NIM/NP/NP.6.7.00_dev/NP/Build/ProductVersions/StronglyNamedVersion.cs&lt;/x:String&gt;
+  &lt;x:String x:Key="AutoMarkingStep1FilePath"&gt;$/NIM/NP/NP.6.7.00_dev/NP/Build/NiceTools/SourceToProductMapping/NICEProjects.MappingRunner.exe&lt;/x:String&gt;
+  &lt;x:Array x:Key="VmDataBase" Type="x:String"&gt;
+    &lt;x:String&gt;[vmnfs_lab_builds_SSD]&lt;/x:String&gt;
+    &lt;x:String&gt;[vmnfs_lab_tfs03_rnd]&lt;/x:String&gt;
+  &lt;/x:Array&gt;
+  &lt;x:String x:Key="VmRunPath"&gt;\\TLVTFS15APPPR01\TfsTools\vmrun.exe&lt;/x:String&gt;
+  &lt;x:String x:Key="ReplaceTextUTF8_ServerPath"&gt;$/NIM/NP/NP.6.7.00_dev/NP/Build/NiceTools/ReplaceTextUTF8.ps1&lt;/x:String&gt;
+  &lt;x:String x:Key="ComponentName"&gt;Playback&lt;/x:String&gt;
+  &lt;sbte:MachineType x:Key="MachineType"&gt;Type43&lt;/sbte:MachineType&gt;
+  &lt;sbte:ComponentBranchType x:Key="ComponentBranchType"&gt;DEV&lt;/sbte:ComponentBranchType&gt;
+  &lt;x:String x:Key="Release"&gt;NP.6.7.00&lt;/x:String&gt;
+  &lt;List x:TypeArguments="sbt:WorkspaceMapping" x:Key="WorkspaceMappings" Capacity="8"&gt;
+    &lt;sbt:WorkspaceMapping LocalPath="Build\ProductVersions" ServerPath="$/NIM/NP/NP.6.7.00_dev/NP/Build/ProductVersions" /&gt;
+    &lt;sbt:WorkspaceMapping LocalPath="Build\Signing" ServerPath="$/NIM/NP/NP.6.7.00_dev/NP/Build/Signing" /&gt;
+    &lt;sbt:WorkspaceMapping LocalPath="Build" ServerPath="$/NIM/NP/NP.6.7.00_dev/NP/Build" /&gt;
+    &lt;sbt:WorkspaceMapping LocalPath="Common_Include" ServerPath="$/NIM/NP/NP.6.7.00_dev/NP/Common_Include" /&gt;
+    &lt;sbt:WorkspaceMapping LocalPath="lib\NiceTools" ServerPath="$/NIM/NP/NP.6.7.00_dev/NP/Build/NiceTools" /&gt;
+    &lt;sbt:WorkspaceMapping LocalPath="BuildProcessTemplates" ServerPath="$/NIM/NP/NP.6.7.00_dev/NP/Build/BuildProcesstemplates" /&gt;
+  &lt;/List&gt;
+  &lt;x:Boolean x:Key="SendEmailByCSOnSuccess"&gt;True&lt;/x:Boolean&gt;
+  &lt;mtbwa:StringList x:Key="SendEmailByCSCCList"&gt;EnterprisePlayback-CBReport@nice.com&lt;/mtbwa:StringList&gt;
+  &lt;x:String x:Key="FileRunner3xXamlServerPath"&gt;$/NIM/NP/NP.6.7.00_dev/NP/Build/BuildProcesstemplates/FileRunner3x.xaml&lt;/x:String&gt;
+  &lt;x:String x:Key="AutoMarkingStep4FilePath"&gt;$/NIM/NP/NP.6.7.00_dev/NP/Build/NiceTools/SourceToProductMapping/NICEProjects.QueryRunner.exe&lt;/x:String&gt;
+  &lt;x:String x:Key="AutoMarkingStep5FilePath"&gt;$/NIM/NP/NP.6.7.00_dev/NP/Build/NiceTools/SourceToProductMapping/AutoFileMarkerClient.exe&lt;/x:String&gt;
+  &lt;x:Boolean x:Key="StaticCodeAnalysis"&gt;True&lt;/x:Boolean&gt;
+  &lt;x:String x:Key="StaticCodeAnalysisScriptCreator"&gt;$/NIM/NP/NP.6.7.00_dev/NP/Build/NiceTools/StaticCodeAnalysisScriptCreator.exe&lt;/x:String&gt;
+  &lt;x:String x:Key="XmlDependenciesClientSideUri"&gt;$/NIM/NP/NP.6.7.00_dev/NP/Build/CollectDependencies/Dependencies_ClientSide.xml&lt;/x:String&gt;
+  &lt;List x:TypeArguments="x:String" x:Key="SendEmailIfAgentNotFound" Capacity="4"&gt;
+    &lt;x:String&gt;ServiceBuildManagement@nice.com&lt;/x:String&gt;
+  &lt;/List&gt;
+  &lt;x:String x:Key="OldestChangeSetId"&gt;346112&lt;/x:String&gt;
+  &lt;x:String x:Key="ClientSideControllerName"&gt;vtfs-03-43-00 [Type-43]&lt;/x:String&gt;
+  &lt;x:Int32 x:Key="MaxDirectDependencies"&gt;10&lt;/x:Int32&gt;
+  &lt;x:Boolean x:Key="IsDirectDependencies"&gt;True&lt;/x:Boolean&gt;
+  &lt;x:String x:Key="LastSuccessfulCompilationChangeSet"&gt;767237&lt;/x:String&gt;
+&lt;/Dictionary&gt;</ProcessParameters>
+  <Schedules />
+  <Mappings>
+    <Mapping>
+      <Depth>Full</Depth>
+      <LocalItem>$(SourceDir)\Playback</LocalItem>
+      <MappingType>Map</MappingType>
+      <ServerItem>$/NIM/NP/NP.6.7.00_dev/NP/Playback</ServerItem>
+    </Mapping>
+    <Mapping>
+      <Depth>Full</Depth>
+      <LocalItem>$(BuildDir)\NP_Output</LocalItem>
+      <MappingType>Map</MappingType>
+      <ServerItem>$/NIM/NP/NP.6.7.00_dev/NP_Output</ServerItem>
+    </Mapping>
+  </Mappings>
+  <RetentionPloicyList>
+    <RetentionPolicy>
+      <BuildReason>ValidateShelveset</BuildReason>
+      <BuildStatus>Succeeded</BuildStatus>
+      <DeleteOptions>All</DeleteOptions>
+      <NumberToKeep>5</NumberToKeep>
+    </RetentionPolicy>
+    <RetentionPolicy>
+      <BuildReason>ValidateShelveset</BuildReason>
+      <BuildStatus>PartiallySucceeded</BuildStatus>
+      <DeleteOptions>All</DeleteOptions>
+      <NumberToKeep>2</NumberToKeep>
+    </RetentionPolicy>
+    <RetentionPolicy>
+      <BuildReason>ValidateShelveset</BuildReason>
+      <BuildStatus>Failed</BuildStatus>
+      <DeleteOptions>All</DeleteOptions>
+      <NumberToKeep>5</NumberToKeep>
+    </RetentionPolicy>
+    <RetentionPolicy>
+      <BuildReason>ValidateShelveset</BuildReason>
+      <BuildStatus>Stopped</BuildStatus>
+      <DeleteOptions>All</DeleteOptions>
+      <NumberToKeep>2</NumberToKeep>
+    </RetentionPolicy>
+    <RetentionPolicy>
+      <BuildReason>Triggered</BuildReason>
+      <BuildStatus>Succeeded</BuildStatus>
+      <DeleteOptions>All</DeleteOptions>
+      <NumberToKeep>5</NumberToKeep>
+    </RetentionPolicy>
+    <RetentionPolicy>
+      <BuildReason>Triggered</BuildReason>
+      <BuildStatus>PartiallySucceeded</BuildStatus>
+      <DeleteOptions>All</DeleteOptions>
+      <NumberToKeep>2</NumberToKeep>
+    </RetentionPolicy>
+    <RetentionPolicy>
+      <BuildReason>Triggered</BuildReason>
+      <BuildStatus>Failed</BuildStatus>
+      <DeleteOptions>All</DeleteOptions>
+      <NumberToKeep>5</NumberToKeep>
+    </RetentionPolicy>
+    <RetentionPolicy>
+      <BuildReason>Triggered</BuildReason>
+      <BuildStatus>Stopped</BuildStatus>
+      <DeleteOptions>All</DeleteOptions>
+      <NumberToKeep>2</NumberToKeep>
+    </RetentionPolicy>
+  </RetentionPloicyList>
+</Root>

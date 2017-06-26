@@ -1,0 +1,787 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Name>NP.6.7.00~BizApps~dev</Name>
+  <TeamProject>NIM</TeamProject>
+  <TeamProjectCollectionUri>http://tlvtfsnlbprd:8080/tfs/ptu_collection</TeamProjectCollectionUri>
+  <Description />
+  <QueueStatus>Enabled</QueueStatus>
+  <ContinuousIntegrationType>Batch</ContinuousIntegrationType>
+  <ContinuousIntegrationQuietPeriod>30</ContinuousIntegrationQuietPeriod>
+  <BuildController>vtfs-03-40-yy [Type-40]</BuildController>
+  <DefaultDropLocation>\\netapp07b\build\nim\np.6.7.00_dev\history</DefaultDropLocation>
+  <Process>2405</Process>
+  <ProcessParameters>&lt;Dictionary x:TypeArguments="x:String, x:Object" xmlns="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:mtbwa="clr-namespace:Microsoft.TeamFoundation.Build.Workflow.Activities;assembly=Microsoft.TeamFoundation.Build.Workflow" xmlns:sbt="clr-namespace:Sela.Build.Types;assembly=Sela.Build.Types" xmlns:sbte="clr-namespace:Sela.Build.Types.Enums;assembly=Sela.Build.Types" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"&gt;
+  &lt;mtbwa:TestSpecList x:Key="TestSpecs" Capacity="1"&gt;
+    &lt;mtbwa:TestAssemblySpec AssemblyFileSpec="Output\EnrollmentService.Tests.dll" CategoryFilter="" FailBuildOnFailure="True" MSTestCommandLineArgs="" TestSettingsFileName="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/EnrollmentService/Local.testsettings" /&gt;
+  &lt;/mtbwa:TestSpecList&gt;
+  &lt;mtbwa:SourceAndSymbolServerSettings x:Key="SourceAndSymbolServerSettings" SymbolStorePath="\\netapp07b\build\NIM\NP.6.7.00_dev\Symbols" /&gt;
+  &lt;mtbwa:AgentSettings x:Key="AgentSettings" MaxExecutionTime="01:00:00" MaxWaitTime="00:05:00" TagComparison="MatchExactly" Tags="Type-40" /&gt;
+  &lt;x:Boolean x:Key="CreateWorkItem"&gt;False&lt;/x:Boolean&gt;
+  &lt;x:Boolean x:Key="DisplayLog"&gt;True&lt;/x:Boolean&gt;
+  &lt;List x:TypeArguments="sbt:ProjectCompiler" x:Key="ProjectsToCompile" Capacity="32"&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/NotificationService/NotificationService.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="4" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/QM/Code/CoachingTool/CoachingTool.Server/CoachingToolServer.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="4" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/QM/Code/EvaluationForms/EvaluationFormsServer.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="4" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2008DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/QM/Code/MyUniverse/MyUniverseServer.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="4" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2008DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Investigations/Server/Investigations.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="4" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2008DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Investigations/RealTimeServer/Investigation.RealTime.Server.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="4" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Reporter/ReporterScheduler/ReporterScheduler.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="4"&gt;
+          &lt;sbt:FileToRun WorkFlowItemName="{x:Null}" Arguments="&amp;quot;C:\WINDOWS\Microsoft.NET\Framework\v3.5\RedistList&amp;quot; &amp;quot;&amp;lt;file&amp;gt;$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Dependencies/CrystalReportsList2008.xml&amp;lt;/file&amp;gt;&amp;quot;  &amp;quot;C:\WINDOWS\Microsoft.NET\Framework\v3.5\RedistList\CrystalReportsList2008.xml&amp;quot;" FileToExecutePath="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/CopyForBizApps.exe" Timeout="0" WorkingDirectory=""&gt;
+            &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+              &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+            &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+          &lt;/sbt:FileToRun&gt;
+        &lt;/List&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="x86" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Reporter/ReporterManager/ReporterManager.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="4" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Reporter/Setup/RasInstall/RasInstall.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="4" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2003DevEnv" Configuration="Release" Platform="None" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/TelephonyServices/OEM/OEMSoftware/OEMSoftware.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="4" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2003DevEnv" Configuration="Release" Platform="None" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/TelephonyServices/OEM/OEMRegistrator/OEMRegistrator.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="4" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="MixedPlatform" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/TelephonyServices/Application/TelephonyServices.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="4" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2008DevEnv" Configuration="Release" Platform="None" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/TelephonyServices/SurveyManager/PBSSysAdminService/PBSSysAdminService.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="4" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/TelephonyServices/Installation CustomAction/CustomAction/CustomAction.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2008DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Update Packs/Custom Actions/Custom Actions.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="4" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Clean" CompilerName="VisualStudio2008DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Fizzback/FizzbackPluginServer/FizzbackPluginServer.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2008DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Fizzback/FizzbackPluginServer/FizzbackPluginServer.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2005DevEnv" Configuration="Development" Platform="Default" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Fizzback/SSIS/SSIS Solution/Fizzback.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/QM/Code/CoachingTool/CoachingTool.Client/CoachingPackage.Client.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="4" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2008DevEnv" Configuration="Release" Platform="None" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/QM/Code/CoachingTool/CoachingTool.Client/ClipRecordingClient.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="4" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2008DevEnv" Configuration="Release" Platform="None" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Investigations/Client/InvestigationsClient.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="4" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/QM/Code/EvaluationForms/EvaluationForms.Client.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="4" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2008DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/QM/Code/MyUniverse/MyUniverseClient.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="4" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2008DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/ClearSightClient/RCAClientSolution/RCAClient.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="4" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Reporter/ReporterClient/ReporterManagerClient.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="4" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="x86" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Reporter/Setup/ReporterOfflineViewer/ReporterOfflineViewer.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="4" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="NET" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Reporter/LinkViewer/LinkViewer.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="4" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2008DevEnv" Configuration="Release" Platform="x86" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Reporter/Setup/ReporterViewer/ReporterViewer.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="4" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2008DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/ConfigurationPackages/ConfigurationPackages.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="4"&gt;
+          &lt;sbt:FileToRun Arguments="{x:Null}" WorkFlowItemName="{x:Null}" FileToExecutePath="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Install/InstallScripts/ReporterClientRemoveExistingProducts.bat" Timeout="0" WorkingDirectory="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Install/InstallScripts"&gt;
+            &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+              &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+            &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+          &lt;/sbt:FileToRun&gt;
+        &lt;/List&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Rebuild" CompilerName="MSBuild35" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Fizzback/FizzBackPlugin/FizzBackPlugin.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="4"&gt;
+          &lt;sbt:FileToRun WorkFlowItemName="{x:Null}" Arguments=" -pvk &amp;quot;&amp;lt;file&amp;gt;$/NIM/NP/NP.6.7.00_dev/NP/Build/Signing/myprivatekey.pvk&amp;lt;/file&amp;gt;&amp;quot; -pi NiceSystems -spc &amp;quot;&amp;lt;file&amp;gt;$/NIM/NP/NP.6.7.00_dev/NP/Build/Signing/mycredentials.spc&amp;lt;/file&amp;gt;&amp;quot; -pfx mypfxfile.pfx -f" FileToExecutePath="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Build/CodeSigning/pvk2pfx.exe" Timeout="0" WorkingDirectory="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Build/CodeSigning"&gt;
+            &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+              &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+            &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+          &lt;/sbt:FileToRun&gt;
+        &lt;/List&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+  &lt;/List&gt;
+  &lt;x:String x:Key="XmlProductsUri"&gt;$/NIM/NP/NP.6.7.00_dev/NP/Build/CopyProducts/Products.xml&lt;/x:String&gt;
+  &lt;x:String x:Key="XmlDependenciesUri"&gt;$/NIM/NP/NP.6.7.00_dev/NP/Build/CollectDependencies/Dependencies.xml&lt;/x:String&gt;
+  &lt;sbte:ComponentAction x:Key="ComponentAction"&gt;Compilation&lt;/sbte:ComponentAction&gt;
+  &lt;List x:TypeArguments="sbt:ProjectCompiler" x:Key="PackagesToCompile" Capacity="4"&gt;
+    &lt;sbt:ProjectCompiler AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" WorkFlowItemName="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2005DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/TelephonyServices/SurveyManager/SurveyManager/SurveyManagerSetup/SurveyManagerSetup.sln" Timeout="0"&gt;
+      &lt;sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.ChildrenProjectsFilesToRunTests&gt;
+      &lt;sbt:ProjectCompiler.PostBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="4" /&gt;
+      &lt;/sbt:ProjectCompiler.PostBuildRuns&gt;
+      &lt;sbt:ProjectCompiler.PreBuildRuns&gt;
+        &lt;List x:TypeArguments="sbt:FileToRun" Capacity="0" /&gt;
+      &lt;/sbt:ProjectCompiler.PreBuildRuns&gt;
+    &lt;/sbt:ProjectCompiler&gt;
+  &lt;/List&gt;
+  &lt;List x:TypeArguments="sbt:ClientSidePackaging" x:Key="ClientSidePackaging" Capacity="4"&gt;
+    &lt;sbt:ClientSidePackaging FilePath="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/TelephonyServices/SurveyManager/SurveyManager/SurveyManagerSetup/Setup/Setup.vdproj" NewFileVersion="4.1.4301.59971" NewTitle="NICE Perform ® Release" /&gt;
+  &lt;/List&gt;
+  &lt;List x:TypeArguments="sbt:FileToRun" x:Key="FilesToRunPostPackagingCompilation" Capacity="4"&gt;
+    &lt;sbt:FileToRun WorkFlowItemName="{x:Null}" Arguments="" FileToExecutePath="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Install/InstallScripts/PlaybackProductsJustMeScript.bat" Timeout="0" WorkingDirectory="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Install/InstallScripts"&gt;
+      &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+    &lt;/sbt:FileToRun&gt;
+    &lt;sbt:FileToRun WorkFlowItemName="{x:Null}" Arguments="/S" FileToExecutePath="$/NIM/NP/NP.6.7.00_dev/NP/Build/NiceTools/nsis-2.46-setup.exe" Timeout="0" WorkingDirectory="$/NIM/NP/NP.6.7.00_dev/NP/Build/NiceTools"&gt;
+      &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+    &lt;/sbt:FileToRun&gt;
+    &lt;sbt:FileToRun WorkFlowItemName="{x:Null}" Arguments="" FileToExecutePath="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Reporter/Setup/ReporterViewer/NSIS files/RunNsis.bat" Timeout="0" WorkingDirectory="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Reporter/Setup/ReporterViewer/NSIS files"&gt;
+      &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+        &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+      &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+    &lt;/sbt:FileToRun&gt;
+  &lt;/List&gt;
+  &lt;x:String x:Key="NP_Output"&gt;\\netapp07b\build\NIM\NP.6.7.00_dev\NP_Output&lt;/x:String&gt;
+  &lt;sbt:ProjectFileToRunOrTestItems WorkFlowItemName="{x:Null}" x:Key="ProjectsFilesToRunAndTests"&gt;
+    &lt;sbt:ProjectFileToRunOrTestItems.ProjectsTestsAndFilesToRun&gt;
+      &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="4"&gt;
+        &lt;sbt:ProjectFileToRunOrTestItem WorkFlowItemName="Items To Compile"&gt;
+          &lt;sbt:ProjectFileToRunOrTestItem.ChildrenProjectsFilesToRunTests&gt;
+            &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="64"&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/NotificationService/NotificationService.sln" Timeout="0" WorkFlowItemName="NotificationService.sln =&amp;gt; VisualStudio2010DevEnv (Release|AnyCPU)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2013DevEnv" Configuration="Release" Platform="MixedPlatform" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/TelephonyServices/Application/TelephonyServices.sln" Timeout="0" WorkFlowItemName="TelephonyServices.sln =&amp;gt; VisualStudio2013DevEnv (Release|MixedPlatform)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Rebuild" CompilerName="MSBuild" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Shared/Commons/RealTimeMessageWriter/RealTimeMessageWriter.sln" Timeout="0" WorkFlowItemName="RealTimeMessageWriter.sln =&amp;gt; MSBuild (Release|AnyCPU)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+              &lt;sbt:FileToRun Arguments="&amp;quot;{Bin}\..\Sources\QM\Code\CoachingTool\CoachingTool.Server\CoachingToolServer.sln&amp;quot; /fl /flp:&amp;quot;logfile={Logs}\CoachingToolServer_Release_Any_CPU.log;encoding=Unicode;verbosity=normal&amp;quot; /t:Rebuild /p:Configuration=&amp;quot;Release&amp;quot; /p:Platform=&amp;quot;Any CPU&amp;quot; /p:RunCodeAnalysis=false" FileToExecutePath="C:\Program Files (x86)\MSBuild\14.0\Bin\MSBuild.exe" Timeout="0" WorkFlowItemName="C:\Program Files (x86)\MSBuild\14.0\Bin\MSBuild.exe =&amp;gt; &amp;quot;{Bin}\..\Sources\QM\Code\CoachingTool\CoachingTool.Server\CoachingToolServer.sln&amp;quot; /fl /flp:&amp;quot;logfile={Logs}\CoachingToolServer_Release_Any_CPU.log;encoding=Unicode;verbosity=normal&amp;quot; /t:Rebuild /p:Configuration=&amp;quot;Release&amp;quot; /p:Platform=&amp;quot;Any CPU&amp;quot; /p:RunCodeAnalysis=false" WorkingDirectory="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/QM/Code/CoachingTool/CoachingTool.Server"&gt;
+                &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:FileToRun&gt;
+              &lt;sbt:FileToRun Arguments="&amp;quot;{Bin}\..\Sources\QM\Code\EvaluationForms\EvaluationFormsServer.sln&amp;quot; /fl /flp:&amp;quot;logfile={Logs}\EvaluationFormsServer_Release_Any_CPU.log;encoding=Unicode;verbosity=normal&amp;quot; /t:Rebuild /p:Configuration=&amp;quot;Release&amp;quot; /p:Platform=&amp;quot;Any CPU&amp;quot; /p:RunCodeAnalysis=false" FileToExecutePath="C:\Program Files (x86)\MSBuild\14.0\Bin\MSBuild.exe" Timeout="0" WorkFlowItemName="C:\Program Files (x86)\MSBuild\14.0\Bin\MSBuild.exe =&amp;gt; &amp;quot;{Bin}\..\Sources\QM\Code\EvaluationForms\EvaluationFormsServer.sln&amp;quot; /fl /flp:&amp;quot;logfile={Logs}\EvaluationFormsServer_Release_Any_CPU.log;encoding=Unicode;verbosity=normal&amp;quot; /t:Rebuild /p:Configuration=&amp;quot;Release&amp;quot; /p:Platform=&amp;quot;Any CPU&amp;quot; /p:RunCodeAnalysis=false" WorkingDirectory="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/QM/Code/EvaluationForms"&gt;
+                &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:FileToRun&gt;
+              &lt;sbt:FileToRun Arguments="&amp;quot;{Bin}\..\Sources\QM\Code\MyUniverse\MyUniverseServer.sln&amp;quot; /fl /flp:&amp;quot;logfile={Logs}\MyUniverseServer_Release_Any_CPU.log;encoding=Unicode;verbosity=normal&amp;quot; /t:Rebuild /p:Configuration=&amp;quot;Release&amp;quot; /p:Platform=&amp;quot;Any CPU&amp;quot; /p:RunCodeAnalysis=false" FileToExecutePath="C:\Program Files (x86)\MSBuild\14.0\Bin\MSBuild.exe" Timeout="0" WorkFlowItemName="C:\Program Files (x86)\MSBuild\14.0\Bin\MSBuild.exe =&amp;gt; &amp;quot;{Bin}\..\Sources\QM\Code\MyUniverse\MyUniverseServer.sln&amp;quot; /fl /flp:&amp;quot;logfile={Logs}\MyUniverseServer_Release_Any_CPU.log;encoding=Unicode;verbosity=normal&amp;quot; /t:Rebuild /p:Configuration=&amp;quot;Release&amp;quot; /p:Platform=&amp;quot;Any CPU&amp;quot; /p:RunCodeAnalysis=false" WorkingDirectory="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/QM/Code/MyUniverse"&gt;
+                &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:FileToRun&gt;
+              &lt;sbt:FileToRun Arguments="&amp;quot;{Bin}\..\Sources\Investigations\Server\Investigations.sln&amp;quot; /fl /flp:&amp;quot;logfile={Logs}\Investigations_Release_Any_CPU.log;encoding=Unicode;verbosity=normal&amp;quot; /t:Rebuild /p:Configuration=&amp;quot;Release&amp;quot; /p:Platform=&amp;quot;Any CPU&amp;quot; /p:RunCodeAnalysis=false" FileToExecutePath="C:\Program Files (x86)\MSBuild\14.0\Bin\MSBuild.exe" Timeout="0" WorkFlowItemName="C:\Program Files (x86)\MSBuild\14.0\Bin\MSBuild.exe =&amp;gt; &amp;quot;{Bin}\..\Sources\Investigations\Server\Investigations.sln&amp;quot; /fl /flp:&amp;quot;logfile={Logs}\Investigations_Release_Any_CPU.log;encoding=Unicode;verbosity=normal&amp;quot; /t:Rebuild /p:Configuration=&amp;quot;Release&amp;quot; /p:Platform=&amp;quot;Any CPU&amp;quot; /p:RunCodeAnalysis=false" WorkingDirectory="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Investigations/Server"&gt;
+                &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:FileToRun&gt;
+              &lt;sbt:FileToRun Arguments="&amp;quot;{Bin}\..\Sources\Investigations\RealTimeServer&amp;quot; BizzApps_Investigation.RealTime.Server" FileToExecutePath="{}{Bin}\..\..\lib\NiceTools\SonarQube\SonarQubePreBuild.bat" Timeout="0" WorkFlowItemName="{}{Bin}\..\..\lib\NiceTools\SonarQube\SonarQubePreBuild.bat =&amp;gt; &amp;quot;{Bin}\..\Sources\Investigations\RealTimeServer&amp;quot; BizzApps_Investigation.RealTime.Server" WorkingDirectory="{}{Bin}\..\Sources\Investigations\RealTimeServer"&gt;
+                &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:FileToRun&gt;
+              &lt;sbt:FileToRun Arguments="&amp;quot;{Bin}\..\Sources\Investigations\RealTimeServer\Investigation.RealTime.Server.sln&amp;quot; /fl /flp:&amp;quot;logfile={Logs}\Investigation.RealTime.Server_Release_Any_CPU.log;encoding=Unicode;verbosity=normal&amp;quot; /t:Rebuild /p:Configuration=&amp;quot;Release&amp;quot; /p:Platform=&amp;quot;Any CPU&amp;quot; /p:RunCodeAnalysis=false" FileToExecutePath="C:\Program Files (x86)\MSBuild\14.0\Bin\MSBuild.exe" Timeout="0" WorkFlowItemName="C:\Program Files (x86)\MSBuild\14.0\Bin\MSBuild.exe =&amp;gt; &amp;quot;{Bin}\..\Sources\Investigations\RealTimeServer\Investigation.RealTime.Server.sln&amp;quot; /fl /flp:&amp;quot;logfile={Logs}\Investigation.RealTime.Server_Release_Any_CPU.log;encoding=Unicode;verbosity=normal&amp;quot; /t:Rebuild /p:Configuration=&amp;quot;Release&amp;quot; /p:Platform=&amp;quot;Any CPU&amp;quot; /p:RunCodeAnalysis=false" WorkingDirectory="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Investigations/RealTimeServer"&gt;
+                &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:FileToRun&gt;
+              &lt;sbt:FileToRun Arguments="BizzApps_Investigation.RealTime.Server" FileToExecutePath="{}{Bin}\..\..\lib\NiceTools\SonarQube\SonarQubePostBuild.bat" Timeout="0" WorkFlowItemName="{}{Bin}\..\..\lib\NiceTools\SonarQube\SonarQubePostBuild.bat =&amp;gt; BizzApps_Investigation.RealTime.Server" WorkingDirectory="{}{Bin}\..\Sources\Investigations\RealTimeServer"&gt;
+                &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:FileToRun&gt;
+              &lt;sbt:FileToRun Arguments="&amp;quot;C:\WINDOWS\Microsoft.NET\Framework\v3.5\RedistList&amp;quot; &amp;quot;&amp;lt;file&amp;gt;$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Dependencies/CrystalReportsList2008.xml&amp;lt;/file&amp;gt;&amp;quot;  &amp;quot;C:\WINDOWS\Microsoft.NET\Framework\v3.5\RedistList\CrystalReportsList2008.xml&amp;quot;" FileToExecutePath="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/CopyForBizApps.exe" Timeout="0" WorkFlowItemName="CopyForBizApps.exe =&amp;gt; &amp;quot;C:\WINDOWS\Microsoft.NET\Framework\v3.5\RedistList&amp;quot; &amp;quot;&amp;lt;file&amp;gt;$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Dependencies/CrystalReportsList2008.xml&amp;lt;/file&amp;gt;&amp;quot;  &amp;quot;C:\WINDOWS\Microsoft.NET\Framework\v3.5\RedistList\CrystalReportsList2008.xml&amp;quot;" WorkingDirectory=""&gt;
+                &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:FileToRun&gt;
+              &lt;sbt:FileToRun Arguments="&amp;quot;{Bin}\..\Sources\Reporter\ReporterScheduler\ReporterScheduler.sln&amp;quot; /fl /flp:&amp;quot;logfile={Logs}\ReporterScheduler_Release_Any_CPU.log;encoding=Unicode;verbosity=normal&amp;quot; /t:Rebuild /p:Configuration=&amp;quot;Release&amp;quot; /p:Platform=&amp;quot;Any CPU&amp;quot; /p:RunCodeAnalysis=false" FileToExecutePath="C:\Program Files (x86)\MSBuild\14.0\Bin\MSBuild.exe" Timeout="0" WorkFlowItemName="C:\Program Files (x86)\MSBuild\14.0\Bin\MSBuild.exe =&amp;gt; &amp;quot;{Bin}\..\Sources\Reporter\ReporterScheduler\ReporterScheduler.sln&amp;quot; /fl /flp:&amp;quot;logfile={Logs}\ReporterScheduler_Release_Any_CPU.log;encoding=Unicode;verbosity=normal&amp;quot; /t:Rebuild /p:Configuration=&amp;quot;Release&amp;quot; /p:Platform=&amp;quot;Any CPU&amp;quot; /p:RunCodeAnalysis=false" WorkingDirectory="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Reporter/ReporterScheduler"&gt;
+                &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:FileToRun&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2013DevEnv" Configuration="Release" Platform="x86" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Reporter/ReporterManager/ReporterManager.sln" Timeout="0" WorkFlowItemName="ReporterManager.sln =&amp;gt; VisualStudio2013DevEnv (Release|x86)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Reporter/Setup/RasInstall/RasInstall.sln" Timeout="0" WorkFlowItemName="RasInstall.sln =&amp;gt; VisualStudio2010DevEnv (Release|AnyCPU)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2003DevEnv" Configuration="Release" Platform="None" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/TelephonyServices/OEM/OEMSoftware/OEMSoftware.sln" Timeout="0" WorkFlowItemName="OEMSoftware.sln =&amp;gt; VisualStudio2003DevEnv (Release|None)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2003DevEnv" Configuration="Release" Platform="None" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/TelephonyServices/OEM/OEMRegistrator/OEMRegistrator.sln" Timeout="0" WorkFlowItemName="OEMRegistrator.sln =&amp;gt; VisualStudio2003DevEnv (Release|None)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2008DevEnv" Configuration="Release" Platform="None" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/TelephonyServices/SurveyManager/PBSSysAdminService/PBSSysAdminService.sln" Timeout="0" WorkFlowItemName="PBSSysAdminService.sln =&amp;gt; VisualStudio2008DevEnv (Release|None)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/TelephonyServices/Installation CustomAction/CustomAction/CustomAction.sln" Timeout="0" WorkFlowItemName="CustomAction.sln =&amp;gt; VisualStudio2010DevEnv (Release|AnyCPU)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Update Packs/Custom Actions/Custom Actions.sln" Timeout="0" WorkFlowItemName="Custom Actions.sln =&amp;gt; VisualStudio2010DevEnv (Release|AnyCPU)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2008DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Fizzback/FizzbackPluginServer/FizzbackPluginServer.sln" Timeout="0" WorkFlowItemName="FizzbackPluginServer.sln =&amp;gt; VisualStudio2008DevEnv (Release|AnyCPU)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2005DevEnv" Configuration="Development" Platform="Default" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Fizzback/SSIS/SSIS Solution/Fizzback.sln" Timeout="0" WorkFlowItemName="Fizzback.sln =&amp;gt; VisualStudio2005DevEnv (Development|Default)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/QM/Code/CoachingTool/CoachingTool.Client/CoachingPackage.Client.sln" Timeout="0" WorkFlowItemName="CoachingPackage.Client.sln =&amp;gt; VisualStudio2010DevEnv (Release|AnyCPU)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2008DevEnv" Configuration="Release" Platform="None" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/QM/Code/CoachingTool/CoachingTool.Client/ClipRecordingClient.sln" Timeout="0" WorkFlowItemName="ClipRecordingClient.sln =&amp;gt; VisualStudio2008DevEnv (Release|None)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+              &lt;sbt:FileToRun Arguments="&amp;quot;{Bin}\..\Sources\Investigations\Client\InvestigationsClient.sln&amp;quot; /fl /flp:&amp;quot;logfile={Logs}\InvestigationsClient_Release_NONE.log;encoding=Unicode;verbosity=normal&amp;quot; /t:Rebuild /p:Configuration=&amp;quot;Release&amp;quot; /p:Platform=&amp;quot;Any CPU&amp;quot; /p:RunCodeAnalysis=false" FileToExecutePath="C:\Program Files (x86)\MSBuild\14.0\Bin\MSBuild.exe" Timeout="0" WorkFlowItemName="C:\Program Files (x86)\MSBuild\14.0\Bin\MSBuild.exe =&amp;gt; &amp;quot;{Bin}\..\Sources\Investigations\Client\InvestigationsClient.sln&amp;quot; /fl /flp:&amp;quot;logfile={Logs}\InvestigationsClient_Release_NONE.log;encoding=Unicode;verbosity=normal&amp;quot; /t:Rebuild /p:Configuration=&amp;quot;Release&amp;quot; /p:Platform=&amp;quot;Any CPU&amp;quot; /p:RunCodeAnalysis=false" WorkingDirectory="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Investigations/Client"&gt;
+                &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:FileToRun&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/QM/Code/EvaluationForms/EvaluationForms.Client.sln" Timeout="0" WorkFlowItemName="EvaluationForms.Client.sln =&amp;gt; VisualStudio2010DevEnv (Release|AnyCPU)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/QM/Code/MyUniverse/MyUniverseClient.sln" Timeout="0" WorkFlowItemName="MyUniverseClient.sln =&amp;gt; VisualStudio2010DevEnv (Release|AnyCPU)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/ClearSightClient/RCAClientSolution/RCAClient.sln" Timeout="0" WorkFlowItemName="RCAClient.sln =&amp;gt; VisualStudio2010DevEnv (Release|AnyCPU)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Reporter/ReporterClient/ReporterManagerClient.sln" Timeout="0" WorkFlowItemName="ReporterManagerClient.sln =&amp;gt; VisualStudio2010DevEnv (Release|AnyCPU)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2013DevEnv" Configuration="Release" Platform="x86" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Reporter/Setup/ReporterOfflineViewer/ReporterOfflineViewer.sln" Timeout="0" WorkFlowItemName="ReporterOfflineViewer.sln =&amp;gt; VisualStudio2013DevEnv (Release|x86)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="NET" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Reporter/LinkViewer/LinkViewer.sln" Timeout="0" WorkFlowItemName="LinkViewer.sln =&amp;gt; VisualStudio2010DevEnv (Release|NET)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2008DevEnv" Configuration="Release" Platform="x86" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Reporter/Setup/ReporterViewer/ReporterViewer.sln" Timeout="0" WorkFlowItemName="ReporterViewer.sln =&amp;gt; VisualStudio2008DevEnv (Release|x86)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+              &lt;sbt:FileToRun Arguments="{x:Null}" FileToExecutePath="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Install/InstallScripts/ReporterClientRemoveExistingProducts.bat" Timeout="0" WorkFlowItemName="ReporterClientRemoveExistingProducts.bat =&amp;gt; " WorkingDirectory="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Install/InstallScripts"&gt;
+                &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:FileToRun&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2010DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/ConfigurationPackages/ConfigurationPackages.sln" Timeout="0" WorkFlowItemName="ConfigurationPackages.sln =&amp;gt; VisualStudio2010DevEnv (Release|AnyCPU)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+              &lt;sbt:FileToRun Arguments="/nologo /noconsolelogger &amp;quot;{Bin}\..\Sources\Fizzback\FizzBackPlugin\FizzBackPlugin.sln&amp;quot; /m:0 /fl /flp:&amp;quot;logfile={Logs}\FizzBackPlugin_Release_AnyCPU.log;encoding=Unicode;verbosity=normal&amp;quot; /p:SkipInvalidConfigurations=true /tv:3.5 /m /t:Rebuild /p:Configuration=&amp;quot;Release&amp;quot; /p:Platform=&amp;quot;Any CPU&amp;quot; /p:FxCopDir=&amp;quot;C:\Program Files (x86)\Microsoft Visual Studio 8\Team Tools\Static Analysis Tools\FxCop&amp;quot; /p:TeamBuildConstants=&amp;quot;_TEAM_BUILD_&amp;quot;" FileToExecutePath="c:\WINDOWS\Microsoft.NET\Framework\v3.5\MSBuild.exe" Timeout="0" WorkFlowItemName="c:\WINDOWS\Microsoft.NET\Framework\v3.5\MSBuild.exe =&amp;gt; /nologo /noconsolelogger &amp;quot;{Bin}\..\Sources\Fizzback\FizzBackPlugin\FizzBackPlugin.sln&amp;quot; /m:0 /fl /flp:&amp;quot;logfile={Logs}\FizzBackPlugin_Release_AnyCPU.log;encoding=Unicode;verbosity=normal&amp;quot; /p:SkipInvalidConfigurations=true /tv:3.5 /m /t:Rebuild /p:Configuration=&amp;quot;Release&amp;quot; /p:Platform=&amp;quot;Any CPU&amp;quot; /p:FxCopDir=&amp;quot;C:\Program Files (x86)\Microsoft Visual Studio 8\Team Tools\Static Analysis Tools\FxCop&amp;quot; /p:TeamBuildConstants=&amp;quot;_TEAM_BUILD_&amp;quot;" WorkingDirectory="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Fizzback/FizzBackPlugin"&gt;
+                &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:FileToRun&gt;
+              &lt;sbt:FileToRun Arguments=" -pvk &amp;quot;&amp;lt;file&amp;gt;$/NIM/NP/NP.6.7.00_dev/NP/Build/Signing/myprivatekey.pvk&amp;lt;/file&amp;gt;&amp;quot; -pi NiceSystems -spc &amp;quot;&amp;lt;file&amp;gt;$/NIM/NP/NP.6.7.00_dev/NP/Build/Signing/mycredentials.spc&amp;lt;/file&amp;gt;&amp;quot; -pfx mypfxfile.pfx -f" FileToExecutePath="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Build/CodeSigning/pvk2pfx.exe" Timeout="0" WorkFlowItemName="pvk2pfx.exe =&amp;gt;  -pvk &amp;quot;&amp;lt;file&amp;gt;$/NIM/NP/NP.6.7.00_dev/NP/Build/Signing/myprivatekey.pvk&amp;lt;/file&amp;gt;&amp;quot; -pi NiceSystems -spc &amp;quot;&amp;lt;file&amp;gt;$/NIM/NP/NP.6.7.00_dev/NP/Build/Signing/mycredentials.spc&amp;lt;/file&amp;gt;&amp;quot; -pfx mypfxfile.pfx -f" WorkingDirectory="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Build/CodeSigning"&gt;
+                &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:FileToRun&gt;
+              &lt;sbt:FileToRun Arguments="&amp;quot;{Logs}\*.*&amp;quot; &amp;quot;{HistoryLogs}&amp;quot; /C /S /H /R /I /Y" FileToExecutePath="xcopy" Timeout="0" WorkFlowItemName="xcopy =&amp;gt; &amp;quot;{Logs}\*.*&amp;quot; &amp;quot;{HistoryLogs}&amp;quot; /C /S /H /R /I /Y" WorkingDirectory=""&gt;
+                &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:FileToRun&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Rebuild" CompilerName="MSBuild" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/EnrollmentService/AuthenticationManager/AuthenticationManager.sln" Timeout="0" WorkFlowItemName="AuthenticationManager.sln =&amp;gt; MSBuild (Release|AnyCPU)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+              &lt;sbt:FileToRun Arguments="{}{Bin}\..\Sources\EnrollmentService BizzApps_EnrollmentService" FileToExecutePath="{}{Bin}\..\..\lib\NiceTools\SonarQube\SonarQubePreBuild.bat" Timeout="0" WorkFlowItemName="{}{Bin}\..\..\lib\NiceTools\SonarQube\SonarQubePreBuild.bat =&amp;gt; {Bin}\..\Sources\EnrollmentService BizzApps_EnrollmentService" WorkingDirectory="{}{Bin}\..\Sources\EnrollmentService"&gt;
+                &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:FileToRun&gt;
+              &lt;sbt:FileToRun Arguments="&amp;quot;{Bin}\..\Sources\EnrollmentService\EnrollmentService.sln&amp;quot; /fl /flp:&amp;quot;logfile={Logs}\EnrollmentService_Release_Any_CPU.log;encoding=Unicode;verbosity=normal&amp;quot; /t:Rebuild /p:Configuration=&amp;quot;Release&amp;quot; /p:Platform=&amp;quot;Any CPU&amp;quot; /p:RunCodeAnalysis=false" FileToExecutePath="C:\Program Files (x86)\MSBuild\14.0\Bin\MSBuild.exe" Timeout="0" WorkFlowItemName="C:\Program Files (x86)\MSBuild\14.0\Bin\MSBuild.exe =&amp;gt; &amp;quot;{Bin}\..\Sources\EnrollmentService\EnrollmentService.sln&amp;quot; /fl /flp:&amp;quot;logfile={Logs}\EnrollmentService_Release_Any_CPU.log;encoding=Unicode;verbosity=normal&amp;quot; /t:Rebuild /p:Configuration=&amp;quot;Release&amp;quot; /p:Platform=&amp;quot;Any CPU&amp;quot; /p:RunCodeAnalysis=false" WorkingDirectory="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/EnrollmentService"&gt;
+                &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:FileToRun&gt;
+              &lt;sbt:FileToRun Arguments="-output:&amp;quot;{Bin}\..\Sources\EnrollmentService\opencover1.xml&amp;quot; -register:user -target:&amp;quot;C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\TestWindow\vstest.console.exe&amp;quot; -targetargs:&amp;quot;{Bin}\EnrollmentService.Tests.dll&amp;quot;" FileToExecutePath="C:\OpenCover\OpenCover.Console.exe" Timeout="0" WorkFlowItemName="C:\OpenCover\OpenCover.Console.exe =&amp;gt; -output:&amp;quot;{Bin}\..\Sources\EnrollmentService\opencover1.xml&amp;quot; -register:user -target:&amp;quot;C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\TestWindow\vstest.console.exe&amp;quot; -targetargs:&amp;quot;{Bin}\EnrollmentService.Tests.dll&amp;quot;" WorkingDirectory="{}{Bin}\..\Sources\EnrollmentService"&gt;
+                &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:FileToRun&gt;
+              &lt;sbt:FileToRun Arguments="BizzApps_EnrollmentService" FileToExecutePath="{}{Bin}\..\..\lib\NiceTools\SonarQube\SonarQubePostBuild.bat" Timeout="0" WorkFlowItemName="{}{Bin}\..\..\lib\NiceTools\SonarQube\SonarQubePostBuild.bat =&amp;gt; BizzApps_EnrollmentService" WorkingDirectory="{}{Bin}\..\Sources\EnrollmentService"&gt;
+                &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:FileToRun&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Rebuild" CompilerName="MSBuild" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Troubleshooting/RTTroubleshooting.sln" Timeout="0" WorkFlowItemName="RTTroubleshooting.sln =&amp;gt; MSBuild (Release|AnyCPU)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+              &lt;sbt:FileToRun Arguments="/S" FileToExecutePath="$/NIM/NP/NP.6.7.00_dev/NP/Build/NiceTools/nsis-2.46-setup.exe" Timeout="0" WorkFlowItemName="nsis-2.46-setup.exe =&amp;gt; /S" WorkingDirectory="$/NIM/NP/NP.6.7.00_dev/NP/Build/NiceTools"&gt;
+                &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:FileToRun&gt;
+              &lt;sbt:FileToRun Arguments="{x:Null}" FileToExecutePath="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Reporter/Setup/ReporterViewer/NSIS files/RunNsis.bat" Timeout="0" WorkFlowItemName="RunNsis.bat =&amp;gt; " WorkingDirectory="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Reporter/Setup/ReporterViewer/NSIS files"&gt;
+                &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:FileToRun&gt;
+              &lt;sbt:FileToRun Arguments="&amp;lt;file&amp;gt;$/NIM/NP/NP.6.7.00_dev/NP/BizApps/DeploymentBin/Reporter/ReporterViewer.exe&amp;lt;/file&amp;gt;" FileToExecutePath="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Build/CodeSigning/SignFile.bat" Timeout="0" WorkFlowItemName="SignFile.bat =&amp;gt; &amp;lt;file&amp;gt;$/NIM/NP/NP.6.7.00_dev/NP/BizApps/DeploymentBin/Reporter/ReporterViewer.exe&amp;lt;/file&amp;gt;" WorkingDirectory="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Build/CodeSigning"&gt;
+                &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:FileToRun&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2013DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Reporter/Setup/CA/ChangeCrystalReportConfig/ChangeCrystalConfiguration/ChangeCrystalConfiguration.sln" Timeout="0" WorkFlowItemName="ChangeCrystalConfiguration.sln =&amp;gt; VisualStudio2013DevEnv (Release|AnyCPU)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2013DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Investigations/Tools/CategoriesExportTool/EngageCategoriesExportTool.sln" Timeout="0" WorkFlowItemName="EngageCategoriesExportTool.sln =&amp;gt; VisualStudio2013DevEnv (Release|AnyCPU)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+            &lt;/List&gt;
+          &lt;/sbt:ProjectFileToRunOrTestItem.ChildrenProjectsFilesToRunTests&gt;
+        &lt;/sbt:ProjectFileToRunOrTestItem&gt;
+      &lt;/List&gt;
+    &lt;/sbt:ProjectFileToRunOrTestItems.ProjectsTestsAndFilesToRun&gt;
+  &lt;/sbt:ProjectFileToRunOrTestItems&gt;
+  &lt;sbt:ProjectFileToRunOrTestItems WorkFlowItemName="{x:Null}" x:Key="PackagesProjectsAndFilesToRun"&gt;
+    &lt;sbt:ProjectFileToRunOrTestItems.ProjectsTestsAndFilesToRun&gt;
+      &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="4"&gt;
+        &lt;sbt:ProjectFileToRunOrTestItem WorkFlowItemName="Items To Compile"&gt;
+          &lt;sbt:ProjectFileToRunOrTestItem.ChildrenProjectsFilesToRunTests&gt;
+            &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="4"&gt;
+              &lt;sbt:ProjectToCompile AdditionalArguments="{x:Null}" MsDevProject="{x:Null}" BuildAction="Rebuild" CompilerName="VisualStudio2005DevEnv" Configuration="Release" Platform="AnyCPU" Project="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/TelephonyServices/SurveyManager/SurveyManager/SurveyManagerSetup/SurveyManagerSetup.sln" Timeout="0" WorkFlowItemName="SurveyManagerSetup.sln =&amp;gt; VisualStudio2005DevEnv (Release|AnyCPU)"&gt;
+                &lt;sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:ProjectToCompile.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:ProjectToCompile&gt;
+            &lt;/List&gt;
+          &lt;/sbt:ProjectFileToRunOrTestItem.ChildrenProjectsFilesToRunTests&gt;
+        &lt;/sbt:ProjectFileToRunOrTestItem&gt;
+        &lt;sbt:ProjectFileToRunOrTestItem WorkFlowItemName="Files to Run"&gt;
+          &lt;sbt:ProjectFileToRunOrTestItem.ChildrenProjectsFilesToRunTests&gt;
+            &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="4"&gt;
+              &lt;sbt:FileToRun Arguments="" FileToExecutePath="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Install/InstallScripts/PlaybackProductsJustMeScript.bat" Timeout="0" WorkFlowItemName="PlaybackProductsJustMeScript.bat =&amp;gt; " WorkingDirectory="$/NIM/NP/NP.6.7.00_dev/NP/BizApps/Sources/Install/InstallScripts"&gt;
+                &lt;sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+                  &lt;List x:TypeArguments="sbt:ProjectFileToRunOrTestItem" Capacity="0" /&gt;
+                &lt;/sbt:FileToRun.ChildrenProjectsFilesToRunTests&gt;
+              &lt;/sbt:FileToRun&gt;
+            &lt;/List&gt;
+          &lt;/sbt:ProjectFileToRunOrTestItem.ChildrenProjectsFilesToRunTests&gt;
+        &lt;/sbt:ProjectFileToRunOrTestItem&gt;
+      &lt;/List&gt;
+    &lt;/sbt:ProjectFileToRunOrTestItems.ProjectsTestsAndFilesToRun&gt;
+  &lt;/sbt:ProjectFileToRunOrTestItems&gt;
+  &lt;x:Boolean x:Key="AutoMarkingStep"&gt;True&lt;/x:Boolean&gt;
+  &lt;x:String x:Key="VersionName"&gt;MirageB&lt;/x:String&gt;
+  &lt;x:String x:Key="UpdatePackNumberFilePath"&gt;$/NIM/NP/NP.6.7.00_dev/NP/Build/ProductVersions/StronglyNamedVersion.cs&lt;/x:String&gt;
+  &lt;x:String x:Key="AutoMarkingStep1FilePath"&gt;$/NIM/NP/NP.6.7.00_dev/NP/Build/NiceTools/SourceToProductMapping/NICEProjects.MappingRunner.exe&lt;/x:String&gt;
+  &lt;x:Array x:Key="VmDataBase" Type="x:String"&gt;
+    &lt;x:String&gt;[vmnfs_lab_builds_SSD]&lt;/x:String&gt;
+    &lt;x:String&gt;[vmnfs_lab_tfs03_rnd]&lt;/x:String&gt;
+  &lt;/x:Array&gt;
+  &lt;x:String x:Key="VmRunPath"&gt;\\TLVTFS15APPPR01\TfsTools\vmrun.exe&lt;/x:String&gt;
+  &lt;x:String x:Key="ReplaceTextUTF8_ServerPath"&gt;$/NIM/NP/NP.6.7.00_dev/NP/Build/NiceTools/ReplaceTextUTF8.ps1&lt;/x:String&gt;
+  &lt;x:String x:Key="ComponentName"&gt;BizApps&lt;/x:String&gt;
+  &lt;sbte:MachineType x:Key="MachineType"&gt;Type43&lt;/sbte:MachineType&gt;
+  &lt;sbte:ComponentBranchType x:Key="ComponentBranchType"&gt;DEV&lt;/sbte:ComponentBranchType&gt;
+  &lt;x:String x:Key="Release"&gt;NP.6.7.00&lt;/x:String&gt;
+  &lt;List x:TypeArguments="sbt:WorkspaceMapping" x:Key="WorkspaceMappings" Capacity="8"&gt;
+    &lt;sbt:WorkspaceMapping LocalPath="Build\ProductVersions" ServerPath="$/NIM/NP/NP.6.7.00_dev/NP/Build/ProductVersions" /&gt;
+    &lt;sbt:WorkspaceMapping LocalPath="Build\Signing" ServerPath="$/NIM/NP/NP.6.7.00_dev/NP/Build/Signing" /&gt;
+    &lt;sbt:WorkspaceMapping LocalPath="Build" ServerPath="$/NIM/NP/NP.6.7.00_dev/NP/Build" /&gt;
+    &lt;sbt:WorkspaceMapping LocalPath="Common_Include" ServerPath="$/NIM/NP/NP.6.7.00_dev/NP/Common_Include" /&gt;
+    &lt;sbt:WorkspaceMapping LocalPath="lib\NiceTools" ServerPath="$/NIM/NP/NP.6.7.00_dev/NP/Build/NiceTools" /&gt;
+    &lt;sbt:WorkspaceMapping LocalPath="BuildProcessTemplates" ServerPath="$/NIM/NP/NP.6.7.00_dev/NP/Build/BuildProcesstemplates" /&gt;
+  &lt;/List&gt;
+  &lt;x:Boolean x:Key="SendEmailByCSOnSuccess"&gt;True&lt;/x:Boolean&gt;
+  &lt;mtbwa:StringList x:Key="SendEmailByCSCCList"&gt;CentralBuild@nice.com&lt;/mtbwa:StringList&gt;
+  &lt;x:String x:Key="FileRunner3xXamlServerPath"&gt;$/NIM/NP/NP.6.7.00_dev/NP/Build/BuildProcesstemplates/FileRunner3x.xaml&lt;/x:String&gt;
+  &lt;x:String x:Key="AutoMarkingStep4FilePath"&gt;$/NIM/NP/NP.6.7.00_dev/NP/Build/NiceTools/SourceToProductMapping/NICEProjects.QueryRunner.exe&lt;/x:String&gt;
+  &lt;x:String x:Key="AutoMarkingStep5FilePath"&gt;$/NIM/NP/NP.6.7.00_dev/NP/Build/NiceTools/SourceToProductMapping/AutoFileMarkerClient.exe&lt;/x:String&gt;
+  &lt;x:Boolean x:Key="StaticCodeAnalysis"&gt;True&lt;/x:Boolean&gt;
+  &lt;x:String x:Key="StaticCodeAnalysisScriptCreator"&gt;$/NIM/NP/NP.6.7.00_dev/NP/Build/NiceTools/StaticCodeAnalysisScriptCreator.exe&lt;/x:String&gt;
+  &lt;x:String x:Key="XmlDependenciesClientSideUri"&gt;$/NIM/NP/NP.6.7.00_dev/NP/Build/CollectDependencies/Dependencies_ClientSide.xml&lt;/x:String&gt;
+  &lt;List x:TypeArguments="x:String" x:Key="SendEmailIfAgentNotFound" Capacity="4"&gt;
+    &lt;x:String&gt;ServiceBuildManagement@nice.com&lt;/x:String&gt;
+  &lt;/List&gt;
+  &lt;x:String x:Key="OldestChangeSetId"&gt;347487&lt;/x:String&gt;
+  &lt;x:String x:Key="ClientSideControllerName"&gt;vtfs-03-43-00 [Type-43]&lt;/x:String&gt;
+  &lt;x:Int32 x:Key="MaxDirectDependencies"&gt;10&lt;/x:Int32&gt;
+  &lt;x:Boolean x:Key="IsDirectDependencies"&gt;True&lt;/x:Boolean&gt;
+  &lt;x:String x:Key="LastSuccessfulCompilationChangeSet"&gt;767419&lt;/x:String&gt;
+&lt;/Dictionary&gt;</ProcessParameters>
+  <Schedules />
+  <Mappings>
+    <Mapping>
+      <Depth>Full</Depth>
+      <LocalItem>$(SourceDir)\BizApps</LocalItem>
+      <MappingType>Map</MappingType>
+      <ServerItem>$/NIM/NP/NP.6.7.00_dev/NP/BizApps</ServerItem>
+    </Mapping>
+    <Mapping>
+      <Depth>Full</Depth>
+      <LocalItem>$(BuildDir)\NP_Output</LocalItem>
+      <MappingType>Map</MappingType>
+      <ServerItem>$/NIM/NP/NP.6.7.00_dev/NP_Output</ServerItem>
+    </Mapping>
+  </Mappings>
+  <RetentionPloicyList>
+    <RetentionPolicy>
+      <BuildReason>ValidateShelveset</BuildReason>
+      <BuildStatus>Succeeded</BuildStatus>
+      <DeleteOptions>All</DeleteOptions>
+      <NumberToKeep>5</NumberToKeep>
+    </RetentionPolicy>
+    <RetentionPolicy>
+      <BuildReason>ValidateShelveset</BuildReason>
+      <BuildStatus>PartiallySucceeded</BuildStatus>
+      <DeleteOptions>All</DeleteOptions>
+      <NumberToKeep>2</NumberToKeep>
+    </RetentionPolicy>
+    <RetentionPolicy>
+      <BuildReason>ValidateShelveset</BuildReason>
+      <BuildStatus>Failed</BuildStatus>
+      <DeleteOptions>All</DeleteOptions>
+      <NumberToKeep>5</NumberToKeep>
+    </RetentionPolicy>
+    <RetentionPolicy>
+      <BuildReason>ValidateShelveset</BuildReason>
+      <BuildStatus>Stopped</BuildStatus>
+      <DeleteOptions>All</DeleteOptions>
+      <NumberToKeep>2</NumberToKeep>
+    </RetentionPolicy>
+    <RetentionPolicy>
+      <BuildReason>Triggered</BuildReason>
+      <BuildStatus>Succeeded</BuildStatus>
+      <DeleteOptions>All</DeleteOptions>
+      <NumberToKeep>5</NumberToKeep>
+    </RetentionPolicy>
+    <RetentionPolicy>
+      <BuildReason>Triggered</BuildReason>
+      <BuildStatus>PartiallySucceeded</BuildStatus>
+      <DeleteOptions>All</DeleteOptions>
+      <NumberToKeep>2</NumberToKeep>
+    </RetentionPolicy>
+    <RetentionPolicy>
+      <BuildReason>Triggered</BuildReason>
+      <BuildStatus>Failed</BuildStatus>
+      <DeleteOptions>All</DeleteOptions>
+      <NumberToKeep>5</NumberToKeep>
+    </RetentionPolicy>
+    <RetentionPolicy>
+      <BuildReason>Triggered</BuildReason>
+      <BuildStatus>Stopped</BuildStatus>
+      <DeleteOptions>All</DeleteOptions>
+      <NumberToKeep>2</NumberToKeep>
+    </RetentionPolicy>
+  </RetentionPloicyList>
+</Root>
